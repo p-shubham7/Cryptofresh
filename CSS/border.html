@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> 
+            Borderimage
+        </title>
+        <style>
+        #box1 {
+            margin: auto;
+            width: 240px;
+            height: 240px;
+            background-color: rgb(0, 255, 115);
+            padding: 20px;
+            border: 30px solid;
+            border-image: url(border3.png);
+            border-image-slice: 100;
+            border-image-repeat: round;    
+        }
+        #box2 {
+            margin: 50px auto;
+            width: 240px;
+            height: 240px;
+            background-color: blue;
+            padding: 20px;
+            border: 30px solid;
+            border-image: linear-gradient(red,pink,yellow,green,blue) 50 / 25px;
+        }
+    </style>
+    </head>
+    <body>
+        <h1 style="color: rgb(153, 0, 255); text-align:center;" ><i> Border image</i></h1>
+        <div id="box1">
+            
+            <p>Implementation of border-image</p>
+        </div>
+        <br><br><br><br><br>
+        <h1 style="color: rgb(255, 0, 0); text-align:center;" ><i>Border image</i></h1>
+        <div id="box2">
+            <p>Implementation of border-image-linear gradient</p>
+        </div>
+    </body>
+</html>

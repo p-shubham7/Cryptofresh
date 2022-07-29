@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <style>
+            .flexer{
+                position: absolute;
+                right: 1%;
+                bottom: 50px;
+                display: flex;
+                align-items: center;
+            }
+            .about{
+                width: 100%;
+                text-align: center;
+                background-color: lightblue;
+                color: darkgoldenrod;
+                background-image: url(aboutbg2.png);
+
+            }
+            .about  h1{
+                    font-size: 20px;
+                    color:red;
+                    margin-bottom: 13px
+                    
+                }
+                .f{
+                    width: 100%;
+                    height: 100vh;
+                    padding: 0 1%;
+                    background-image: url(aboutbg1.png);
+                    background-position: center;
+                    background-size: cover;
+                    color: black;
+                    background-attachment: fixed;
+                    
+                }
+                .f h2{
+
+                    font-size: 20px;
+                    color: darkred;
+
+                }
+                .h{
+                    width: 100%;
+                    background-color: yellowgreen;
+                    background-attachment: fixed;
+                }
+                .f h2{
+                    font-size: 20px;
+                    color: red;
+                    text-align: center;
+
+                }
+                .para {
+                    font-size: large;
+                    color: darkgreen;
+                }
+                section.myFooter1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                background:grey;
+                }
+
+                .myFooter1 li a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .myFooter1 ul li {
+                    list-style-type: none;
+                    padding: 6px;
+                    color: white;
+                }
+                .navBar li a:hover,
+                .navItems li a:hover,
+                .contactUs li.effectHover a:hover, 
+                .socialMedia li a:hover {
+                    color: red;
+                }
+
+                section#faqp {
+                    display: flex;
+                    flex-direction: row;
+                    align-content: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+        </style>
+    </head>
+            <body>
+                <header>
+                <article>
+                    <div class="about">
+                    
+                    <section>
+                        <h1> About Us </h1>
+                        <p>
+                            CryptoFresh is an American privat  company that operates a live cryptocurrency price in usd.
+                            Coinbase is a distributed company; all employees operate via remote work and the company lacks a physical headquarters. The company was founded in 2012 by S. Brat.
+                        </p>
+                    </section>
+                    </div>
+                    <div class=" f">
+                        <article>
+                            <h2>F&Q</h2>
+                            <section id="faqp">
+                                
+                                <div>
+                                    <img src="F&Q.png" alt="FAQ">
+                                </div>
+                                <div class="para">
+                                    <p1>
+                                        How are ranks for cryptocurrencies determined?
+                                    </p1>
+                                        <br>
+                                        Rank is determined by the market capitalization of a cryptocurrency, which is calculated by multiplying its volume weighted average price by its circulating supply. A coin/token must be trading on 2 exchanges and 3 markets to be ranked
+                                        <br><br><br>
+                                        
+                                        How is the price of a cryptocurrency calculated?
+                                        <br>
+                                        Prices are pulled directly from exchanges.
+                                        <br>
+                                        The price of an cryptocurrency is calculated by the volume weighted average of global market pairs that are traded on spot markets with trading fees. This means that the volume is directly correlated with how much influence it has over the global average price.
+                                        <br><br><br>
+                                        
+                                        How is total volume calculated?
+                                        <br>
+                                        The total volume is calculated by taking the sum of the volumes of all active markets. All markets included in the total volume statistic are spot markets with trading fees.
+                                        <br><br><br>
+                                        
+                                        Definition of Circulating/Total/Max supply<br>
+                                        Circulating Supply is the amount circulating within the market, and in the hands of the people utilizing it. Coins that are locked, escrowed, reserved or not able to be traded are not included in the circulating supply calculation.
+                                        <br>
+                                        Total Supply is the total amount of coins that have been minted/created excluding any coins that have been burned.
+                                        <br>
+                                        Max Supply is the maximum amount of coins that will exist within the cryptocurrency, conditioned by its platform.
+                                        <br>
+                                    </p>
+                                    </div>
+                            </section>
+                            
+                        </article> 
+                    </div>
+                    </article>
+                    </header>
+                    <footer>
+                        <div >
+                        <section class="myFooter1">
+                            <div class="contactUs">
+                                <ul>
+                                    <li><h1>Contact Us</h1></li>
+                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>  CF, koparkhairane,navi mumbai-402177</li>
+                                    <li><i class="fa fa-phone" aria-hidden="true"></i>  +91 92882827332</li>
+                                    <li><i class="fa fa-envelope" aria-hidden="true"></i>  mailto:wesupport@cf.com</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="socialMedia">
+                                <ul>
+                                    <li><h1>Follow us on</h1></li>
+                                    <li><a href="https://www.linkedin.com/login/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>  LinkedIn</a></li>
+                                    <li><a href="https://www.facebook.com/login.php" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i>  Facebook</a></li>
+                                    <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>  Instagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        </div>
+                    </footer>
+            </body>
+</html>

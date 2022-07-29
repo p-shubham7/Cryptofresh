@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+
+    <style>
+        .para{
+            border: 2px solid aqua;
+            height: 200px;
+            margin: 20px;   
+            font-family: var(--fonts); 
+        }
+        form{
+            border: 2px solid royalblue;
+            height: 300px;
+            width: 500px;
+            margin: 20px;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        article{
+            border: 2px solid blueviolet;
+            height: 100px;
+            width: 500px;
+            font-family: var(--fonts);
+        }
+        p:empty{
+            background-color:crimson;
+            height: 30px;
+            width: 80px;
+        }
+        
+        .para *:not(p){
+            color: brown;
+        }
+
+        
+        input[type='radio']:checked{
+            outline: 10px solid red;
+        }
+
+        input[type='checkbox']:checked{ 
+            outline: 2px solid green;
+        }
+
+    
+        input:disabled{
+            border: 2px dashed rgb(73, 20, 220);
+        }
+
+        
+        input[type='number']:read-only{
+            background-color: rgb(205, 255, 232);
+        }
+
+        
+        input:invalid{
+            border: 4px solid rgb(255, 0, 119);
+        }
+
+        
+        :root{
+            background-color:rgb(250, 210, 210); 
+            --fonts: 'Courier New', Courier, monospace;
+            
+        } 
+        li::marker{
+            color:rgb(225, 0, 255);
+        }
+
+        ul li::marker{
+            content: '+';
+        }
+
+        
+
+        
+
+    </style>
+</head>
+<body>
+    
+    <form action="Success.html">
+        <label>First Name:</label>
+        <input type="text" name="fname" id="fn">
+        <br><br>
+        <label>Last Name:</label>
+        <input type="text" name="lname" id="ln" disabled>
+        <br><br>
+        <label>Age:</label>
+        <input type="number"  id="age" readonly>
+        <br><br>
+        <label>Email Id: </label>
+        <input type="email"  id="mail" required>
+        <br><br>
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" id="M1">Male</label>
+        <label><input type="radio" name="gender" id="F1">Female</label>
+        <br><br>
+        <label>Languages Known</label>
+        <label><input type="checkbox" id="M1">Marathi</label>
+        <label><input type="checkbox" id="F1">Hindi</label>
+        <label><input type="checkbox" id="F1">English</label>
+        <br><br>
+        <input type="submit" value="REGISTER">
+
+    </form>
+
+    <div class="para" id="p1">
+        <h3>HTML stands for HyperText Markup Language</h3>
+        <p>HTML stands for HyperText Markup Language</p>
+        <p>HTML stands for HyperText Markup Language</p>
+        <p>HTML stands for HyperText Markup Language</p>
+    </div>
+
+    <article>
+        There are three main programming languages that
+        are important in web development:HTML, CSS, and JavaScript.
+    </article>
+    <div>
+        <ol>
+            <li></li>
+            <li>Strawberry</li>
+            <li>Vanilla</li>
+            <li>Butterscotch</li>
+            <li>Chocolate</li>
+        </ol>
+
+        <ul>
+            <li>Chocolate</li>
+            <li>Strawberry</li>
+            <li>Vanilla</li>
+            <li>Butterscotch</li>
+            <li>Chocolate</li>
+            <li>Mango</li>
+            <li>Coconut</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.box {
+    margin: 50px;
+    width: 240px;
+    height: 240px;
+    background-color: blue;
+    padding: 20px;
+    border: 30px solid;
+    border-image: url("image/border-image.jpg") 30 / 25px;
+
+}
